@@ -28,7 +28,7 @@
             <!-- fieldsets -->
             <fieldset id="fields_1">
                 <img  src = "./iqube_logo.png" height="100px" >
-                <h2 class="fs-title">Level 1 intake July 2020</h2>
+                <h2 class="fs-title">iQube Core Team Intake 2022</h2>
                 <h3 class="fs-subtitle">General instructions and guidelines for filling this SOP</h3>
                 <ul style="text-align: left;">
                     <li>Firstly open this digital SOP and read through all the questions, prepare your answers and then fill
@@ -41,12 +41,12 @@
                     </li>
                     <li>Based on the selection panel’s comments, you will be scheduled for the interview through mail. So
                       kindly have a regular check on your email.</li>
-                    <li>This SOP should be <b>submitted online before 26th July 2020 6pm IST.</b></li>
+                    <li>This SOP should be <b>submitted online before 28th Jan 2022 6pm IST.</b></li>
+                    <li>Depending on your performance in the interview you will be given the roles.</li>
                     <li>Most important instructions of all, have fun through learning. Although there are some technical
                       questions, it's just a part of the assessment. It's your persistent and willingness that matters the
                       most. Good luck!</li>
-                    <li>For any queries about the SOP, you can email us at <b>iqube@kct.ac.in</b> or call 6385770539,
-                      6383304918.</li>
+                    <li>For any queries about the SOP, you can email us at <b><a href="mailto:iqube@kct.ac.in">iqube@kct.ac.in</a> </b> or Call us at <a href="tel:7010061432"> 7010061432</a> </li>
                   </ul>
                   <div style="text-align: left;">
                     <div class="form-group">
@@ -63,17 +63,34 @@
                       </div>
                       <div class="form-group fields_1">
                         <label for="exampleFormControlSelect1">Opted Domain</label>
-                        <select  name ="Domain" class="form-control" id="exampleFormControlSelect1">
+                        <select  name ="Domain" class="form-control" id="exampleFormControlSelect1" onchange='CheckColors(this.value);'>
                           <option value="None" selected>-------</option>
                           <option value="Embedded">Embedded & IoT</option>
                           <option value="Software">Web & App Development</option>
-						  <option value="Data science">Data science</option>
+						              <option value="Data science">Data science</option>
                           <option value="cyber">Cyber Security</option>
                           <option value="AR/VR">AR/VR & Game Development</option>
                           <option value= "AI/ML">AI/ML Development</option>
                           <option value= "3d">3D Design/Printing</option>
-						   <option value= "others">Others</option>
+                          <option value= "Tec_Prod_Manage">Technical Product Management</option>
+                          <option value= "Buss_Prod_Manage">Bussiness Product Management</option>
+                          <option value= "Finance_Manage">Finance Management</option>
+						              <option value= "others">Others</option>
                         </select>
+                        <script>
+                          function CheckColors(val){
+                           var element=document.getElementById('Domain');
+                           if(val=='others')
+                           {
+                           element.style.display='block';
+                             element.value="";
+                          }
+                           else { 
+                             element.style.display='none';
+                             element.value="1";
+                           }
+                          }</script>
+                        <input type="text" class="form-control fields_1" name="Domain" id="Domain" style='display:none; margin-top: 1%;' value="1"/>
                       </div>
                   </div>
                 <input type="button" name="next" class="next action-button" value="Next"/>

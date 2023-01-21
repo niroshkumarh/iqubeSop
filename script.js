@@ -22,6 +22,7 @@ Array.from(document.getElementsByClassName("next")).forEach(elem => elem.addEven
 	for (var elem of validation_elements) {
 		console.log(elem.value, "is the value of the element")
 		if (elem.value == "" || elem.value=="None") {
+			// if(document.getElementById("exampleFormControlSelect1").value == "o")
 			swal("Oops", `Please fill all Inputs`, "error");
 			console.log(this.enabled, "is the state of the button")
 			to_execute = false
@@ -138,7 +139,7 @@ $("#msform").submit(function (e) {
 	$("#alert_resp_box").show()
 	let form_data = new FormData(document.querySelector("#msform"))
 
-	fetch("https://script.google.com/macros/s/AKfycbymZxgfcebRZnI3ycFmLfCycZFv7WbqGEhHNh-P9M4ioOrgjdA/exec",{
+	fetch("https://script.google.com/macros/s/AKfycbyiiiDjOrRJgT0-fZy5L2vj1Ixokzc30zAfu9tgshLVClGt975SC1LbZI9s5mddlMDe3g/exec",{
 		method:"POST",
 		body:form_data
 	}).then(response=>{
