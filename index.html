@@ -67,6 +67,14 @@
                         <input type="text" class="form-control fields_1" id="number"  name="number" placeholder="Enter Phone number" required>
                       </div>
                       <div class="form-group fields_1">
+                        <label for="resident"> Resident Type</label>
+                        <select  name ="resident" class="form-control" id="resident" onchange='CheckColors(this.value);'>
+                          <option value="None" selected>-------</option>
+                          <option value="Hostel">Hosteller</option>
+                          <option value="Dayscholar">Dayscholar</option>
+                        </select>
+                      </div>
+                      <div class="form-group fields_1">
                         <label for="exampleFormControlSelect1">Opted Domain</label>
                         <select  name ="Domain" class="form-control" id="exampleFormControlSelect1" onchange='CheckColors(this.value);'>
                           <option value="None" selected>-------</option>
