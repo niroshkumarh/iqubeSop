@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>iQube- SOP Form</title>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+	  <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset id="fields_1">
+                <!-- <img  src = "./10yearslogo.png" height="100px" > -->
+                <img src="./10yearslogo.png" style="max-height: 100px; width: auto; max-width: 100%;">
+                <h2 class="fs-title">Intake 2024</h2>
+                <h3 class="fs-subtitle">General instructions and guidelines for filling this SOP</h3>
+                <ul style="text-align: left;">
+                  <li>Open to Kumaraguru Institutions Students Group only.</li>
+                    <li>Firstly open this digital SOP and read through all the questions, prepare your answers and then fill
+                      each field aptly.</li>
+                    <li>We expect your answers to be genuine also we recommend not to frame answers in order to impress the
+                      selection panel.</li>
+                    <li>The word limit for the below sections are :- <b><br>Section 1: 50 to 100 words. <br>Section 2: 150 to 200
+                        words. <br>Section 3: 100 to 150 words.</b></li>
+                    <!-- <li>With the word limits set, we expect precise answers that revolve only around the questions asked.
+                    </li> -->
+                    <li>Based on the selection panel’s comments, you will be scheduled for the interview through mail. So
+                      kindly have a regular check on your email.</li>
+                    <li>This SOP should be <b>submitted online before 10th May  2024 6pm IST.</b></li>
+                    <li>Your performance in the interview defines your roles.</li>
+                    <li>Most important instructions of all, have fun through learning. Although there are some technical
+                      questions, it's just a part of the assessment. It's your persistent and willingness that matters the
+                      most. Good luck!</li>
+                    <li>For any queries about the SOP, you can email us at <b><a href="mailto:iqube@kct.ac.in">iqube@kct.ac.in</a> </b> or Call us at <a href="tel:9150731231"> 9150731231</a> </li>
+                  </ul>
+                  <div style="text-align: left;">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control fields_1" name= "name" id="name" placeholder="Enter Name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="rn">Roll No:</label>
+                        <input type="text" class="form-control fields_1" id="rn" name="roll_no" placeholder="Enter Roll No" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="rn">Email ID:</label>
+                        <input type="text" class="form-control fields_1" id="email"  name="email" placeholder="Enter Email ID" required>
+                      </div>
+			<div class="form-group">
+                        <label for="rn">Phone Number:</label>
+                        <input type="text" class="form-control fields_1" id="number"  name="number" placeholder="Enter Phone number" required>
+                      </div>
+                      <div class="form-group fields_1">
+                        <label for="exampleFormControlSelect1">Opted Domain</label>
+                        <select  name ="Domain" class="form-control" id="exampleFormControlSelect1" onchange='CheckColors(this.value);'>
+                          <option value="None" selected>-------</option>
+                          <option value="Embedded">Embedded & IoT</option>
+                          <option value="Software">Web & App Development</option>
+						              <option value="Data science">Data science</option>
+                          <option value="cyber">Cyber Security</option>
+                          <option value="AR/VR">AR/VR & Game Development</option>
+                          <option value= "AI/ML">AI/ML Development</option>
+			  <option value= "Robotics">Robotics</option>
+                          <option value= "Mech">CAD Design & Product Development </option>
+                          <option value= "Tec_Prod_Manage">Technical Product Management</option>
+                          <option value= "Buss_Prod_Manage">Bussiness Product Management</option>
+                          <option value= "Finance_Manage">Finance Management</option>
+						              <option value= "others">Others</option>
+                        </select>
+                        <script>
+                          function CheckColors(val){
+                           var element=document.getElementById('Domain');
+                           if(val=='others')
+                           {
+                           element.style.display='block';
+                             element.value="";
+                          }
+                           else { 
+                             element.style.display='none';
+                             element.value="1";
+                           }
+                          }</script>
+                        <input type="text" class="form-control fields_1" name="Domain1" id="Domain" style='display:none; margin-top: 1%;' value="1"/>
+                      </div>
+                  </div>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset id="fields_2">
+              <img src="./10yearslogo.png" style="max-height: 100px; width: auto; max-width: 100%;">
+                <h2 class="fs-title">Section 1: Perception</h2>
+                <h3 class="fs-subtitle">(50 to 100 words)</h3>
+                <div style="text-align: left;">
+                <div class="form-group">
+                    <label for="q1">1.1)Amidst most clubs and forums in Kumaraguru, what made you choose iQube and why do
+                      you want to be a part of this tribe ?</label>
+                    <textarea class="form-control fields_2" id="q1" name="q1" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="q2">1.2)What are your expectations from iQube ? We expect even the tiniest things to
+                      bigger things that are on your mind.</label>
+                    <textarea class="form-control fields_2" id="q2" name="q2"  required></textarea>
+                  </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset id="fields_3">
+              <img src="./10yearslogo.png" style="max-height: 100px; width: auto; max-width: 100%;">
+                <h2 class="fs-title">Section 2: Introspection</h2>
+                <h3 class="fs-subtitle">(150 to 200 words)</h3>
+                <div style="text-align: left;">
+                <div class="form-group">
+                    <label for="q1">2.1)Among all other registered applicants to the roles at iQube, what do you think
+                      sets you apart and unique so we could prefer you over others?</label>
+                    <textarea class="form-control fields_3" id="q1"  name="q3" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="q2">2.2)Goals, ambitions, dreams differ with each person.Among them enlist your long term
+                      and short term goals.Also tell us in specific on one-goal you are currently working on to accomplish
+                      and the hindrances you faced</label>
+                    <textarea class="form-control fields_3" id="q2" name="q4" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="q3">2.3)Mention in specific your source of encouragement/motivation/inspiration that sets
+                      you to move your limits to bring out the best version of yourself.</label>
+                    <textarea class="form-control fields_3" id="q3" name="q5" required></textarea>
+                  </div>
+           
+                  <div class="form-group">
+                    <label for="q5">2.4)What is your perspective on criticisms and failures? Mention one of the recent
+                      downfalls of yours, also tell us about your lessons learnt and how did you overcome it?</label>
+                    <textarea class="form-control fields_3" id="q5" name="q6"  required></textarea>
+                  </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset id="fields_4">
+              <img src="./10yearslogo.png" style="max-height: 100px; width: auto; max-width: 100%;">
+                <h2 class="fs-title">Section 3: Cognizance</h2>
+                <h3 class="fs-subtitle">(100 to 150 words)</h3>
+              <div style="text-align: left;">
+                <div class="form-group">
+                    <label for="q1">3.1)What is your recent technological fascination that you look up to, browse through
+                      and have made a short research of recent times?</label>
+                    <textarea class="form-control fields_4" id="q1" name="q7" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="q2">3.2)What is the domain that you have opted to explore in iQube? Tell us in specific
+                      about what made you opt this domain rather than others and why?</label>
+                    <textarea class="form-control fields_4" id="q2" name="q8" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="q3">3.3)What were your aligned efforts made by you for the exploration/progress in your
+                      opted domain of interest?</label>
+                    <textarea class="form-control fields_4" id="q3" name="q9"  required></textarea>
+                  </div>
+              </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" id="submit_btn" class="submit action-button" value="Submit"/>
+                <div id="alert_resp_box" class="alert alert-warning">
+                  Please wait until you get a response in Pop-up (Maximum 1 Min) or else response wont be saved to us.
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+<!-- partial -->
+<script src="swal.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
