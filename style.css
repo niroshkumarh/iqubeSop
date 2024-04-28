@@ -12,7 +12,8 @@
 
 html {
     height: 130%;
-    background: linear-gradient(to left, #0EB1E9, #08bef6, #0133fc);
+    background: linear-gradient(to left, #d4e2e7, #c6e9f6, #c1e8f7, #75d9fa, #4bcefa, #0EB1E9);
+    /* background: linear-gradient(to left, #0EB1E9, #08bef6, #0133fc); */
     background-size: 200% 200%;
     animation: GradientShift 3s ease infinite;
 }
